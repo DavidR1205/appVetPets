@@ -1,0 +1,21 @@
+/*Config general*/
+* {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*style for save page totality*/
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+/*----------------------------*/
+

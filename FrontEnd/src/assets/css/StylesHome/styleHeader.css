@@ -1,0 +1,63 @@
+/*style header contentPage*/
+
+.headerPage {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+/*-----------------------*/
+
+/*Menu Icon*/
+.menu-logo {
+    font-size: 28px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.menu-logo:hover {
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+.sidebar-button {
+    padding: 3px 8px;
+}
+
+/*Logout Icon*/
+
+.content-logout {
+    padding: 0px 15px;
+}
+
+.logout-button {
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 15px;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgb(243, 222, 222);
+}
+
+.logout-button:hover {
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+}
+
+.logo-logout {
+    font-size: 18px;
+}
+
+/*---------------------------*/
+
+/*content of the page*/
+.contentPage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

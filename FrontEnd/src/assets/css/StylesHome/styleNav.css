@@ -1,0 +1,131 @@
+/*style for left sidebar*/
+.navBar {
+    background-color: rgb(243, 243, 243);
+    width: 26vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 8px;
+    justify-content: center;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.navBar.collapsed {
+    width: 5.6vh;
+}
+
+
+.home-content {
+    width: 100%;
+}
+
+.title {
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    background-color: white;
+}
+
+    .title:hover {
+        background-color: rgb(228, 234, 241);
+    }
+    
+    .elements-title {
+        padding: 0px 7px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+
+    .logo-sidebar {
+        font-size: 38px;
+        color: rgb(129, 67, 67);
+        min-width: 38px;
+    }
+
+   
+.profile-content {
+    width: 100%;
+}
+
+.profile:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+.profile {
+    margin: 10px 0px;
+    border-radius: 30px;
+    background-color: rgb(243, 222, 222);
+}   
+
+    .elements-profile {
+        display: flex;
+        align-items: center;
+        padding: 8px 6.5px;
+        gap: 15px;
+        font-size: 15px;
+    }
+
+    .logo-profile {
+        font-size: 30px;
+        min-width: 38px;
+    }
+
+.mains {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    margin: 20px 0px;
+}
+
+    .elements-sidebar {
+        display: flex;
+        gap: 17.5px;
+        align-items: center;
+        border-radius: 30px;
+        padding: 10px 5px;
+        margin: 1px 0px;
+        font-size: 14px;
+    }
+
+    .elements-sidebar:hover {
+        background-color: rgb(211, 211, 211);
+    }
+
+    .logo-main {
+        font-size: 22px;
+        min-width: 38px;
+    }
+
+.settings-content {
+    width: 100%;
+}
+
+
+.settings {
+    align-items: flex-end;
+    border-radius: 30px;
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.settings:hover {
+    background-color: rgb(211, 211, 211);
+}
+
+    .elements-settings {
+        display: flex;
+        align-items: center;
+        padding: 10px 5px;
+        gap: 17.5px;
+        font-size: 14px;
+    }
+
+/*-------------------------*/
