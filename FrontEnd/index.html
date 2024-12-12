@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/image/VetPetLogo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VetPets</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,26 +19,7 @@
   <!-- Scripts para Iconos -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!--Script para la transicion del menu-->
-  <script>
-    const menuLogo = document.querySelector('.menu-logo');
-    const navBar = document.querySelector('.navBar');
-
-    /*menuLogo.addEventListener('click', () => {
-        navBar.classList.toggle('collapsed');
-    });*/
-
-    let isExpanded = false;
-
-    menuLogo.addEventListener('click', () => {
-      isExpanded = !isExpanded; // Cambiar el estado
-      if (isExpanded) {
-        navBar.classList.add('collapsed');
-      } else {
-        navBar.classList.remove('collapsed');
-      }
-    });
-  </script>
+  
 </body>
 
 </html>

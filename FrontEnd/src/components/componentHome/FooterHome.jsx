@@ -5,7 +5,7 @@ const FooterHome = () => {
   return (
     <div >
       <footer>
-        <p>&copy; Todos los derechos reservados - Automoviles Itagui S.A.S - 2024</p>
+        <p>&copy; Todos los derechos reservados - David Ramirez - 2024</p>
       </footer>
     </div>
   )

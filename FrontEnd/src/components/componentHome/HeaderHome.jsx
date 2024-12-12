@@ -1,4 +1,3 @@
-import React from 'react'
 import '../../assets/css/StylesHome/styleHeader.css'
 
 const HeaderHome = () => {

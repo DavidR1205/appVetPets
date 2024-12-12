@@ -1,10 +1,9 @@
 import NavHome from "../components/componentHome/NavHome.jsx";
 import FooterHome from "../components/componentHome/FooterHome.jsx";
-import Router from "../router/Router.jsx";
 import HeaderHome from "../components/componentHome/HeaderHome.jsx";
 import "../assets/css/styleLayouts/styleLayoutHome.css"
 
-const LayoutHome = () => {
+const LayoutHome = ({ children }) => {
   return (
     <>
       <div className="page">
@@ -12,10 +11,10 @@ const LayoutHome = () => {
           <NavHome />
         </div>
         <div className="contentPage">
-            <HeaderHome />
-            <div className="sectionPrincipal">
-            <Router />
-            </div>
+          <HeaderHome />
+          <div className="sectionPrincipal">
+            {children}
+          </div>
           <div className='footerPage'>
             <FooterHome />
           </div>

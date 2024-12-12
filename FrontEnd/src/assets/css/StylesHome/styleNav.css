@@ -1,3 +1,7 @@
+:root {
+    --primary-color: #caddf5;
+}
+
 /*style for left sidebar*/
 .navBar {
     background-color: rgb(243, 243, 243);
@@ -44,9 +48,8 @@
     }
 
     .logo-sidebar {
-        font-size: 38px;
-        color: rgb(129, 67, 67);
-        min-width: 38px;
+        min-width: 28px;
+        width: 33px;
     }
 
    
@@ -61,7 +64,7 @@
 .profile {
     margin: 10px 0px;
     border-radius: 30px;
-    background-color: rgb(243, 222, 222);
+    background-color: var(--primary-color);
 }   
 
     .elements-profile {

@@ -1,81 +1,80 @@
-import React from 'react'
-import '../../assets/css/StylesHome/styleNav.css'
+import '../../assets/css/StylesHome/styleNav.css';
+import { Link } from 'react-router-dom';
+import logoEmpresa from '../../assets/image/VetPetLogo.png';
 
 const NavHome = () => {
   return (
     <div class="page">
       <nav class="navBar">
         <div class="home-content">
-          <a href="">
+          <Link to="">
             <div class="title">
               <div class="elements-title">
-                <ion-icon name="checkmark-circle" class="logo-sidebar"></ion-icon>
+                <img src={logoEmpresa} alt="" class="logo-sidebar" />
                 <p>Inicio</p>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div class="profile-content">
-          <a href="">
+          <Link to="#">
             <div class="profile">
               <div class="elements-profile">
                 <ion-icon name="person-circle-outline" class="logo-profile"></ion-icon>
-                <p>Usuario X</p>
+                <p>David Ramirez Perdomo</p>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div class="mains">
-          <a href="/citas">
+          <Link to="/citas">
             <div class="listNav">
               <div class="elements-sidebar">
-                <ion-icon name="pricetag-outline" class="logo-main"></ion-icon>
+                <ion-icon name="calendar-clear-outline" class="logo-main"></ion-icon>
                 <p>Citas</p>
               </div>
             </div>
-          </a>
-          <a href="/clientes">
-            <div class="listNav">
-              <div class="elements-sidebar">
-                <ion-icon name="cash-outline" class="logo-main"></ion-icon>
-                <p>Clientes</p>
-              </div>
-            </div>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/clientes">
             <div class="listNav">
               <div class="elements-sidebar">
                 <ion-icon name="person-outline" class="logo-main"></ion-icon>
-                <p>Ventas</p>
+                <p>Clientes</p>
               </div>
             </div>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/pacientes">
             <div class="listNav">
               <div class="elements-sidebar">
-                <ion-icon name="bus-outline" class="logo-main"></ion-icon>
-                <p>Ventas</p>
-              </div>
-            </div>
-          </a>
-          <a href="/pacientes">
-            <div class="listNav">
-              <div class="elements-sidebar">
-                <ion-icon name="stats-chart-outline" class="logo-main"></ion-icon>
+                <ion-icon name="paw-outline" class="logo-main"></ion-icon>
                 <p>Pacientes</p>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="settings-content">
-          <a href="">
-            <div class="settings">
-              <div class="elements-settings">
-                <ion-icon name="settings-outline" class="logo-main"></ion-icon>
-                <p>Ajustes</p>
+          </Link>
+          <Link to="">
+            <div class="listNav">
+              <div class="elements-sidebar">
+                <ion-icon name="fitness-outline" class="logo-main"></ion-icon>
+                <p>Historias</p>
               </div>
             </div>
-          </a>
+          </Link>
+          <Link to="">
+            <div class="listNav">
+              <div class="elements-sidebar">
+                <ion-icon name="clipboard-outline" class="logo-main"></ion-icon>
+                <p>Inventario</p>
+              </div>
+            </div>
+          </Link>
+          <Link to="">
+            <div class="listNav">
+              <div class="elements-sidebar">
+                <ion-icon name="bag-outline" class="logo-main"></ion-icon>
+                <p>Ventas</p>
+              </div>
+            </div>
+          </Link>
         </div>
       </nav>
     </div>
