@@ -2,79 +2,10 @@
     --primary-color: #caddf5;
 }
 
-
-/*Estilos para la base del formulario Login*/
-
-.baseLogin {
+.baseContainerLogin {
     border: 1px solid black;
-    min-height: 54vh;
-    min-width: 48vh;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-}
-/*Estilos para contenedor que contiene el logo*/
-.containerImageLogin {
-    display: flex;
-    justify-content: center;
-    min-height: 27vh;
 }
 
-/*se agrega estilo de borde para que no sobresalga del recuadro del login*/
-.imgLogo {
-    border-radius: 20px;
-}
-
-.formLogin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    min-height: 22vh;
-}
-
-/*Estilos para los inputs y sus labels*/
-.contentFormLogin {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 6% 12%;
-    background-color: aliceblue;
-    border-radius: 0px 0px 20px 20px;
-}
-
-.containerLogin {
-    padding: 5px 0px;
-}
-
-.inputLogin {
-    border: 1px solid black;
-    padding: 5px;
-    margin: 7px 0px;
-    border-radius: 10px;
-    display: flex;
-    min-width: 100%;
-    font-size: 14px;
-}
-
-.containerButton {
-    width: 103%;
-    display: flex;
-    justify-content: center;
-    margin: 5% 0px;
-}
-
-.buttonLogin {
-    width: 100%;
-    min-height: 4vh;
-    border-radius: 10px;
-    border: 1px solid black;
-    font-size: 15px;
-    background-color: var(--primary-color);
-    font-weight: 600;
-}
-
-.buttonLogin:hover {
-    background-color: rgb(157, 189, 226);
-    cursor: pointer;
+.imageContainer {
+    background-color: rgb(209, 209, 209);
 }

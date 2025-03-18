@@ -1,16 +1,18 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import router from './Routes/ClientesRoute.js';
-import { getConnection } from './Config/Connection.js';
+import routerClientes from './Routes/ClientesRoute.js';
+import routerLogin from './Routes/LoginRoute.js';
 
-dotenv.config();
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.get('/clientes', router);
+
+app.get('/clientes', routerClientes);
+app.use('/login', routerLogin)
+
 app.listen(process.env.PORT, ()=>{
-    getConnection();
     console.log(`Conectados a traves del puerto ${process.env.PORT}`)
 })

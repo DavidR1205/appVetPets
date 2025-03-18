@@ -2,8 +2,10 @@ import { getAllClientes } from "../../services/ClienteServices.js";
 import React, { useEffect, useState } from "react";
 import "../../assets/css/stylesPages/styleClientes.css"
 import { Link } from 'react-router-dom'
+import useAuth from '../../hooks/UseAuth.js'
 
 const ListarCliente = () => {
+    useAuth();
 
     const [clientes, setClientes] = useState([]);
     const [error, setError] = useState('');

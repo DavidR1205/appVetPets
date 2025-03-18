@@ -12,16 +12,12 @@ const stringConnection = {
     },   
 };
 
-const getConnection = async ()=>{
-
-    try {
-        await sql.connect(stringConnection);
-        console.log("Conectados a la Base de Datos");
-    } catch (error) {
-        console.log("Error: ", error);
-        process.exit(1);
-    }
-
-}
+const getConnection = new sql.ConnectionPool(stringConnection)
+.connect()
+.then(pool =>{
+    console.log('Conectados')
+    return pool
+})
+.catch(error => console.log('Error de conexión a la BD', error))
 
 export {sql, getConnection}
